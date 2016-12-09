@@ -88,6 +88,7 @@ h1 {
 <a class="button" href="javascript:void(0);" id="demoButton">Demo</a>
 <script type="text/javascript">
         document.getElementById('demoButton').onclick = function () {
+	     /*
 	     $.ajax({
 
 		url: 'https://localhost/brianmr31?tab=repositories',
@@ -100,6 +101,10 @@ h1 {
 			alert('Failed!'); 
 		}
 
+	    });
+	    */
+	    $.getJSON("https://github.com/brianmr31?tab=repositories",function(data){
+		console.log(data);
 	    });
 	    //console.log("==============================================================")
 	    /*
