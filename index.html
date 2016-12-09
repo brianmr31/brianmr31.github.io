@@ -64,6 +64,15 @@ h1 {
     <a href="{{ site.baseurl }}/list.html">View More...</a>
   </ul>
 </div>
+
+<div class="recent-posts">
+  <h1>Recent Posts</h1>
+  {% include hello.html %}
+	<h5> HELLO </h5>
+  <ul>
+    <a href="{{ site.baseurl }}/list.html">View More...</a>
+  </ul>
+</div>
 <div id="helloo">
 
 </div>
@@ -76,4 +85,44 @@ h1 {
 <div id="formnya">
 
 </div>
+<a class="button" href="javascript:void(0);" id="demoButton">Demo</a>
+<script type="text/javascript">
+        document.getElementById('demoButton').onclick = function () {
+	    console.log("==============================================================")
+	    
+		var invocation = new XMLHttpRequest();
+		var url = 'https://github.com/brianmr31?tab=repositories';
+		    
+		//function callOtherDomain(){
+		  if(invocation) {
+		    invocation.open('GET', url, true);
+		    invocation.setRequestHeader("contentType", "application/x-www-form-urlencoded");
+		    invocation.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+		    invocation.withCredentials = true;
+		    invocation.onreadystatechange = function () {
+			if (invocation.readyState == 4) {
+			    console.log("READYSTATE; Status : "+invocation.status);
+			    if (invocation.status == 200) {
+             			console.log("STATUS 200");
+				var data = invocation.responseText;
+			    }
+			}
+		    };
+		    invocation.send(); 
+		  }
+		//}
+	    console.log("==============================================================")
+            Push.create('===============================', {
+                body: 'Team Liquid ',
+                icon: '/images/600px-Liquidlogobig.png',
+                timeout: 4000,
+                onClick: function () {
+                    console.log("Fired!");
+                    window.focus();
+                    this.close();
+                },
+                vibrate: [200, 100, 200, 100, 200, 100, 200]
+            });
+        };
+</script>
 {% endif %}
