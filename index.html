@@ -113,19 +113,17 @@ h1 {
 		//}
 	    console.log("==============================================================")
 	    */
-	    while(true){
-		    Push.create('Test', {
-		        body: 'Team Liquid ',
-		        icon: '/images/600px-Liquidlogobig.png',
-		        timeout: 4000,
-		        onClick: function () {
-		            console.log("Fired!");
-		            window.focus();
-		            this.close();
-		        },
-		        vibrate: [200, 100, 200, 100, 200, 100, 200]
-		    });
-	    }
+            Push.create('Test', {
+                body: 'Team Liquid ',
+                icon: '/images/600px-Liquidlogobig.png',
+                timeout: 1000000,
+                onClick: function () {
+                    console.log("Fired!");
+                    window.focus();
+                    this.close();
+                },
+                vibrate: [200, 100, 200, 100, 200, 100, 200]
+            });
         };
 </script>
 {% endif %}
