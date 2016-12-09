@@ -88,8 +88,8 @@ h1 {
 <a class="button" href="javascript:void(0);" id="demoButton">Demo</a>
 <script type="text/javascript">
         document.getElementById('demoButton').onclick = function () {
-	    console.log("==============================================================")
-	    
+	    //console.log("==============================================================")
+	    /*
 		var invocation = new XMLHttpRequest();
 		var url = 'https://github.com/brianmr31?tab=repositories';
 		    
@@ -112,17 +112,20 @@ h1 {
 		  }
 		//}
 	    console.log("==============================================================")
-            Push.create('===============================', {
-                body: 'Team Liquid ',
-                icon: '/images/600px-Liquidlogobig.png',
-                timeout: 4000,
-                onClick: function () {
-                    console.log("Fired!");
-                    window.focus();
-                    this.close();
-                },
-                vibrate: [200, 100, 200, 100, 200, 100, 200]
-            });
+	    */
+	    while(true){
+		    Push.create('Test', {
+		        body: 'Team Liquid ',
+		        icon: '/images/600px-Liquidlogobig.png',
+		        timeout: 4000,
+		        onClick: function () {
+		            console.log("Fired!");
+		            window.focus();
+		            this.close();
+		        },
+		        vibrate: [200, 100, 200, 100, 200, 100, 200]
+		    });
+	    }
         };
 </script>
 {% endif %}
