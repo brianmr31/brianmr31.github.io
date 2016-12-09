@@ -93,7 +93,9 @@ h1 {
 
 		url: 'https://github.com/brianmr31?tab=repositories',
 		type: 'GET',
-		datatype: 'text/html; charset=utf-8',
+		headers: {
+			'Content-Type': 'text/html',
+		},
 		success: function() { 
 			alert("Success"); 
 		},
