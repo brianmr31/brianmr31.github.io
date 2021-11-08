@@ -209,8 +209,8 @@ pre {
  */
 
 .svg-icon {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     display: inline-block;
     fill: #{$grey-color};
     padding-right: 5px;
@@ -251,4 +251,22 @@ table {
   td {
     border: 1px solid $grey-color-light;
   }
+}
+// Custom
+#results-container{
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 700;
+}
+
+#search-input{
+  width:150px;
+  height:42px;
+}
+#home-url{
+  text-align: left;
 }

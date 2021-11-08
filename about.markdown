@@ -3,16 +3,11 @@ layout: page
 title: About
 permalink: /about/
 ---
+Saya Br1aN, saya mengawali karir di Jogja akhir tahun 2016. Biasanya saya menggunakan waktu luang untuk mencoba hal - hal random seperti:
+- Oprek distro linux.
+- Koding yang menurutku menarik seperti FaceRcognition dengan tensorflow.
+- Framework baru flutter, react dll.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Saya sempat membuat repository github untuk menampung hal - hal random tadi, agar tidak lupa. Read.me dapat digunakan juga, namun untuk pembahasan yang mendetail saya rasa perlu dibuatkan blog. Sehingga saya berpikir untuk membuat noted online untuk agar hal - hal random tadi tidak terlupakan dan mengikatkan kemampuan menulisku. Semoga catatanku bermanfaat.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Trima kasih.
