@@ -26,6 +26,13 @@ layout: default
       {%- endfor -%}
     </ul>
 
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <div id="g_id_onload"
+         data-client_id="1061384377332-90q0qk28avga1f0rj7d720akactj9r8m.apps.googleusercontent.com"
+         data-ux_mode="redirect"
+         data-login_uri="https://www.example.com/your_login_endpoint">
+    </div>
+    <div class="g_id_signin" data-type="standard"></div>
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
 
